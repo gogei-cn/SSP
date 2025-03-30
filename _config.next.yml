@@ -31,7 +31,6 @@ custom_file_path:
   #mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
 
-
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -44,7 +43,6 @@ scheme: Gemini
 
 # Dark Mode
 darkmode: true
-
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -86,7 +84,6 @@ open_graph:
     #fb_admins: <fb:admin_id>
     #fb_app_id: <fb:app_id>
 
-
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -97,9 +94,9 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  某不智能生物研究手册: 
+  某不智能生物研究手册:
     default: /docs/ || fa fa-book
-    第一章：SSP-9652: 
+    第一章：SSP-9652:
       default: /SSP-9652/ || fa fa-book
       对人的态度: /对人的态度/ || fa fa-comment
       喜好: /喜好/ || fa fa-heart
@@ -111,9 +108,6 @@ menu:
     随机效应: /随机效应/ || fa fa-random
     SSP航天: /SSP航天/ || fa fa-rocket
 
-
-
-      
   #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
   #categories: /categories/ || fa fa-th
@@ -126,7 +120,6 @@ menu:
 menu_settings:
   icons: true
   badges: true
-
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -211,7 +204,6 @@ toc:
   # Maximum heading depth of generated toc.
   max_depth: 6
 
-
 # ---------------------------------------------------------------
 # Footer Settings
 # See: https://theme-next.js.org/docs/theme-settings/footer
@@ -237,7 +229,6 @@ footer:
   # Set to `false` to disable the copyright statement.
   copyright: 异常人事研究小组编写
 
-
   # Powered by Hexo & NexT
   powered: false
 
@@ -251,7 +242,6 @@ footer:
     gongan_num:
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url:
-
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -315,12 +305,11 @@ related_posts:
 post_edit:
   enable: true
   # url: https://github.com/O25-Council/O25-Council.github.io/tree/main/docs # Link for view source
-  url: https://github.com/O25-Council/Blog/tree/main/source/ # Link for fork & edit
+  url: https://github.com/gogei-cn/SSP/tree/main/source/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
 post_navigation: left
-
 
 # ---------------------------------------------------------------
 # Custom Page Settings
@@ -347,7 +336,6 @@ calendar:
   showDeleted: false
   singleEvents: true
   maxResults: 250
-
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -430,7 +418,6 @@ github_banner:
   enable: false
   permalink: https://github.com/yourname
 
-
 # ---------------------------------------------------------------
 # Font Settings
 # ---------------------------------------------------------------
@@ -482,7 +469,6 @@ font:
     external: true
     family:
 
-
 # ---------------------------------------------------------------
 # SEO Settings
 # See: https://theme-next.js.org/docs/theme-settings/seo
@@ -512,7 +498,6 @@ yandex_site_verification:
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
 baidu_site_verification:
-
 
 # ---------------------------------------------------------------
 # Tags Settings
@@ -590,7 +575,6 @@ math:
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
     copy_tex: false
 
-
 # ---------------------------------------------------------------
 # External Libraries
 # See: https://theme-next.js.org/docs/third-party-services/external-libraries
@@ -636,7 +620,6 @@ quicklink:
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
 
-
 # ---------------------------------------------------------------
 # Animation Settings
 # ---------------------------------------------------------------
@@ -677,7 +660,6 @@ canvas_ribbon:
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
-
 # ---------------------------------------------------------------
 # Comments Settings
 # See: https://theme-next.js.org/docs/third-party-services/comments
@@ -689,7 +671,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active: utterances
+  active: 
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -738,33 +720,32 @@ livere_uid: # <your_uid>
 # For more information: https://gitalk.github.io
 gitalk:
   enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
+  github_id: gogei-cn # GitHub repo owner
+  repo: SSP # Repository name to store issues
+  client_id:  # GitHub Application Client ID
   client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  admin_user: gogei-cn # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: true
-  repo: user-name/repo-name # Github repository owner and name
+  enable: false
+  repo: gogei-cn/SSP # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
-  theme: github-light
+  theme: preferred-color-scheme
 
 # Isso
 # For more information: https://isso-comments.de
 isso: # <data_isso>
-
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
@@ -777,7 +758,6 @@ addtoany:
   buttons:
     - facebook
     - twitter
-
 
 # ---------------------------------------------------------------
 # Statistics and Analytics
@@ -865,7 +845,6 @@ busuanzi_count:
   post_views: true
   post_views_icon: far fa-eye
 
-
 # ---------------------------------------------------------------
 # Search Services
 # See: https://theme-next.js.org/docs/third-party-services/search-services
@@ -889,7 +868,6 @@ local_search:
   # Preload the search data when the page loads.
   preload: false
 
-
 # ---------------------------------------------------------------
 # Chat Services
 # See: https://theme-next.js.org/docs/third-party-services/chat-services
@@ -907,7 +885,7 @@ chat:
 chatra:
   enable: false
   async: true
-  id:  # Visit Dashboard to get your ChatraID
+  id: # Visit Dashboard to get your ChatraID
   #embed: # Unfinished experimental feature for developers. See: https://chatra.com/help/api/#injectto
 
 # Tidio is a powerful, all-in-one customer service tool.
@@ -916,7 +894,6 @@ chatra:
 tidio:
   enable: false
   key: # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer
-
 
 # ---------------------------------------------------------------
 # CDN Settings
