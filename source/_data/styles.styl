@@ -1,32 +1,31 @@
 body {
-    background:url(/images/logo_ssp.png);
+    background: url('/images/logo_ssp.png');
     background-repeat: no-repeat;
-    background-attachment: fixed; //是否滚动，fixed固定
-    background-size: auto
+    background-attachment: fixed; // 是否滚动，fixed固定
+    background-size: auto;
     background-position: center;
-    background-color: rgba(185, 185, 185, 0.11);  //主体背景透明
-
+    background-color: rgba(185, 185, 185, 0.11); // 主体背景透明
 }
 
-//搜索框透明
-.popup {        
-  opacity: 0.9;
+// 搜索框透明
+.popup {
+    opacity: 0.9;
 }
 
 :root {
-  --content-bg-color: #ffffffe0;
-  color-scheme: light;
+    --content-bg-color: #ffffffe0;
+    color-scheme: light;
 }
 
 if (hexo-config('darkmode')) {
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --content-bg-color: #333333e0;
-      color-scheme: dark;
-    }
-    iframe {
-      color-scheme: light;
-    }
-  }
-}
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --content-bg-color: #333333e0;
+            color-scheme: dark;
+        }
 
+        iframe {
+            color-scheme: light;
+        }
+    }
+}
