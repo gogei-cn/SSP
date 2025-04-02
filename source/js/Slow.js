@@ -104,6 +104,7 @@ var binft = function (r) {
             "是RE！",
             "RE：随机效应",
             "Juicy~Juicy~",
+            "别来无恙，我是图酱~",
         ].map(function (r) {
             return r + "";
         }),
