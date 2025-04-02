@@ -15,6 +15,10 @@ function getCookie(cname) {
     }
     return "";
 }
+function clearPassword() {
+    setCookie("password", "", -1);
+    location.reload();
+}
 function verify() {
     var password = getCookie("password");
     if (password != "9652530") {
