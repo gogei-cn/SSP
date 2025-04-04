@@ -154,7 +154,6 @@ var binft = function (r) {
             "为人民服务",
             "nice!",
             "是9652，我们有救了",
-            "",
         ].map(function (r) {
             return r + "";
         }),

@@ -6,8 +6,13 @@
         <title>验证</title>
         <link href="/css/main.css" rel="stylesheet" />
         <link href="/css/verify.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
     <body>
+        <script src="/js/canvas-nest.js"></script>
         <div class="hero">
             <div class="main-box">
                 <div class="form-box">
@@ -61,7 +66,6 @@
                             placeholder="Password"
                             required
                         />
-
                         <input
                             type="submit"
                             class="submit-btn"
@@ -117,8 +121,15 @@
                 x.style.left = "-500px";
                 y.style.left = "0px";
                 z.style.left = "110px";
-                short.style.color = "rgb(234, 234, 235)";
-                long.style.color = "#252525";
+                if (
+                    window.matchMedia("(prefers-color-scheme: light)").matches
+                ) {
+                    short.style.color = "#252525";
+                    long.style.color = "rgb(234, 234, 235)";
+                } else {
+                    short.style.color = "rgb(234, 234, 235)";
+                    long.style.color = "#252525";
+                }
                 after.style.left = "0";
                 after.style.top = "0";
             }
@@ -126,8 +137,15 @@
                 x.style.left = "0px";
                 y.style.left = "500px";
                 z.style.left = "0px";
-                long.style.color = "rgb(234, 234, 235)";
-                short.style.color = "#252525";
+                if (
+                    window.matchMedia("(prefers-color-scheme: light)").matches
+                ) {
+                    short.style.color = "rgb(234, 234, 235)";
+                    long.style.color = "#252525";
+                } else {
+                    long.style.color = "rgb(234, 234, 235)";
+                    short.style.color = "#252525";
+                }
                 after.style.left = "50%";
                 after.style.top = "0";
             }
