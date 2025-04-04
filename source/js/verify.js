@@ -15,21 +15,11 @@ function getCookie(cname) {
     }
     return "";
 }
-function clearPassword() {
-    setCookie("password", "", -1);
-    location.reload();
-}
 function verify() {
     var password = getCookie("password");
-    if (password != "9652530") {
-        password = prompt("请输入密码:", "");
-        if (password == "9652530") {
-            setCookie("password", password, 30);
-        } else {
-            alert("密码错误！");
-            location.reload();
-        }
+    console.log(password);
+    if (password !== "9652530") {
+        location.assign("/verify");
     }
 }
-
 verify();
